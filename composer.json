@@ -1,32 +1,31 @@
 {
-    "name": "jalsoedesign/no-dependency-http-server",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Andreas Jalsøe",
-            "email": "andreas@jalsoedesign.net",
-            "homepage": "http://www.jalsoedesign.net",
-            "role": "developer"
-        }
-    ],
-    "scripts": {
-        "test:once": "php ./test/simple-server-once.php",
-        "test:infinite": "php ./test/simple-server-infinite.php",
-        "test:oauth": "php ./test/simple-server-oauth.php",
-        "test:options": "php ./test/simple-server-options.php",
-        "test:serve-files": "php ./test/simple-server-serve-files.php"
-    },
-    "require-dev": {},
-    "require": {
-        "ext-sockets": "*",
-        "php": ">=5.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "jalsoedesign\\NoDependencyHttpServer\\": "src"
-        }
-    },
-    "config": {
-        "process-timeout": 0
+  "name": "jalsoedesign/no-dependency-http-server",
+  "type": "library",
+  "license": "MIT",
+  "authors": [{
+    "name": "Andreas Jalsøe",
+    "email": "andreas@jalsoedesign.net",
+    "homepage": "http://www.jalsoedesign.net",
+    "role": "developer"
+  }],
+  "scripts": {
+    "test:once": "php ./test/simple-server-once.php",
+    "test:infinite": "php ./test/simple-server-infinite.php",
+    "test:oauth": "php ./test/simple-server-oauth.php",
+    "test:options": "php ./test/simple-server-options.php",
+    "test:serve-files": "php ./test/simple-server-serve-files.php"
+  },
+  "require-dev": {},
+  "require": {
+    "ext-sockets": "*",
+    "php": ">=5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "jalsoedesign\\NoDependencyHttpServer\\": "src"
     }
+  },
+  "config": {
+    "process-timeout": 0
+  }
 }
